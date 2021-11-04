@@ -36,13 +36,20 @@ public class Line_Comparison {
 	 System.out.println("The 2 lines are equal in length");
 	else
  	 System.out.println("The 2 lines are  not equal in length");
+	
+	int comparison = (line1.compareTo(line2));
+	System.out.print(comparison);
 	*/
 
-	if( line1 == line2 )
-	 System.out.println("The 2 lines are equal in length");
-	else
- 	 System.out.println("The 2 lines are  not equal in length");
-  	}
+
+	if( line1>line2 )
+	 System.out.println("The line 1 is longer than line 2");
+	else if( line2>line1 )
+ 	 System.out.println("The line 2 is longer than line 1");
+  	else
+ 	 System.out.println("The 2 lines are equal in length");
+
+	}
 
 	static double linelength(double x1, double x2, double y1, double y2)
 	{
